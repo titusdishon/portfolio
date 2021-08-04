@@ -14,6 +14,8 @@ const normal = createTheme({
       primary: "#000000",
     },
   },
+  typography: {
+    fontFamily: ' WorkSans Regular'},
   button: {
     primary:
       "linear-gradient(to right, #6A9113 0%, #141517  51%, #6A9113  100%)",

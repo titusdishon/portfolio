@@ -61,7 +61,7 @@ export default function Introduction(props) {
               onClick={() => props.setWindow("B")}
               endIcon={<PlayCircleFilledIcon>send</PlayCircleFilledIcon>}
             >
-              Pease View My Stack
+              View My Stack
             </Button>
           </div>
         </Typist>
