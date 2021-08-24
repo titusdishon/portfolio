@@ -1,98 +1,97 @@
 :root {
-    --primaryFont: 'WorkSans Regular';
-    --primaryFontBold: 'WorkSans Bold';
-    --primaryColor: rgb(0, 0, 0);
-    --secondaryColor: #1a1d3f;
-    --lightSecondaryColor: #1a1d3fdb;
-    --darkColor: #313131;
-    --lightBackground: #fff;
-  }
-  
-  @font-face {
-    font-family: 'Lato Bold';
-    src: url('./fonts/Lato-Bold.ttf') format('truetype');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Lato Regular';
-    src: url('./fonts/Lato-Regular.ttf') format('truetype');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Sarabun Bold';
-    src: url('./fonts/Sarabun-Bold.ttf') format('truetype');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Sarabun Regular';
-    src: url('./fonts/Sarabun-Regular.ttf') format('truetype');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'WorkSans Bold';
-    src: url('./fonts/WorkSans-Bold.ttf') format('truetype');
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'WorkSans Regular';
-    src: url('./fonts/WorkSans-Regular.ttf') format('truetype');
-    font-display: swap;
-  }
-  
-  html {
-    min-height: 100% !important;
-  }
-  
-  body {
-    margin: 0;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 12px;
-    font-family: var(--primaryFont);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  * {
-    box-sizing: border-box !important;
-  }
-  
-  .halftone-image-bg {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .error-container {
-    width: fit-content;
-    margin: 0.5em 0;
-  }
-  
-  .pac-container {
-    z-index: 10001 !important;
-    box-shadow: none !important;
-  }
-  
-  .activeTab {
-    background-color: #0000000f !important;
-    border-color: #d84465 !important;
-    color: #000 !important;
-  }
-  
-  .MuiFormHelperText-root {
-    color: #ff1744 !important;
-  }
-  
-  .MuiAccordionSummary-root.Mui-expanded {
-    min-height: 36px !important;
-  }
-  
+  --primaryFont: 'WorkSans Regular';
+  --primaryFontBold: 'WorkSans Bold';
+  --primaryColor: rgb(0, 0, 0);
+  --secondaryColor: #1a1d3f;
+  --lightSecondaryColor: #1a1d3fdb;
+  --darkColor: #313131;
+  --lightBackground: #fff;
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('./fonts/Lato-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('./fonts/Lato-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun Bold';
+  src: url('./fonts/Sarabun-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sarabun Regular';
+  src: url('./fonts/Sarabun-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans Bold';
+  src: url('./fonts/WorkSans-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans Regular';
+  src: url('./fonts/WorkSans-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+html {
+  min-height: 100% !important;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  font-family: var(--primaryFont);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+.halftone-image-bg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.error-container {
+  width: fit-content;
+  margin: 0.5em 0;
+}
+
+.pac-container {
+  z-index: 10001 !important;
+  box-shadow: none !important;
+}
+
+.activeTab {
+  background-color: #0000000f !important;
+  border-color: #d84465 !important;
+  color: #000 !important;
+}
+
+.MuiFormHelperText-root {
+  color: #ff1744 !important;
+}
+
+.MuiAccordionSummary-root.Mui-expanded {
+  min-height: 36px !important;
+}

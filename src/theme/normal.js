@@ -1,26 +1,27 @@
-import { createTheme } from "@material-ui/core/styles";
+import { createTheme } from '@material-ui/core/styles'
 
 //default 'normal' theme
 const normal = createTheme({
   palette: {
     primary: {
-      main: "#616a70",
-      contrastText: "#000000",
+      main: '#616a70',
+      contrastText: '#000000',
     },
     background: {
-      default: "#ffffff",
+      default: '#ffffff',
     },
     text: {
-      primary: "#000000",
+      primary: '#000000',
     },
   },
   typography: {
-    fontFamily: ' WorkSans Regular'},
+    fontFamily: ' WorkSans Regular',
+  },
   button: {
     primary:
-      "linear-gradient(to right, #6A9113 0%, #141517  51%, #6A9113  100%)",
-    contrast: "#ffffff",
+      'linear-gradient(to right, #6A9113 0%, #141517  51%, #6A9113  100%)',
+    contrast: '#ffffff',
   },
-});
+})
 
-export default normal;
+export default normal

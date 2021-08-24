@@ -1,12 +1,12 @@
-import React from "react";
-import Particles from "react-particles-js";
+import React from 'react'
+import Particles from 'react-particles-js'
 
 export const ParticlesContainer = (props) => (
   <Particles
-    width="100%"
-    height="100%"
+    width='100%'
+    height='100%'
     style={{
-      position: "absolute",
+      position: 'absolute',
       left: 0,
       right: 0,
       bottom: 0,
@@ -30,16 +30,16 @@ export const ParticlesContainer = (props) => (
           },
         },
         color: {
-          value: ["#69DDFF", "#F4C6DB", "#FFF05A"],
+          value: ['#69DDFF', '#F4C6DB', '#FFF05A'],
         },
         shape: {
-          type: ["circle", "edge", "polygon"],
+          type: ['circle', 'edge', 'polygon'],
         },
         move: {
           random: true,
           speed: 3,
-          direction: "top",
-          out_mode: "out",
+          direction: 'top',
+          out_mode: 'out',
         },
         line_linked: {
           enable: false,
@@ -47,4 +47,4 @@ export const ParticlesContainer = (props) => (
       },
     }}
   />
-);
+)

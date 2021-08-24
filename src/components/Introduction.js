@@ -1,45 +1,45 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
-import Typist from "react-typist";
-import Grow from "@material-ui/core/Grow";
-import Button from "@material-ui/core/Button";
-import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Container from '@material-ui/core/Container'
+import Typist from 'react-typist'
+import Grow from '@material-ui/core/Grow'
+import Button from '@material-ui/core/Button'
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
   },
   grow: {
-    marginTop: "15%",
+    marginTop: '15%',
   },
   card: {
     color: theme.palette.primary.contrastText,
   },
   iam: {
-    fontSize: "2em",
-    fontWeight: "bold",
+    fontSize: '2em',
+    fontWeight: 'bold',
   },
   name: {
-    fontSize: "3em",
-    fontWeight: "bold",
+    fontSize: '3em',
+    fontWeight: 'bold',
   },
   greetings: {
-    fontSize: "4em",
-    fontWeight: "bold",
+    fontSize: '4em',
+    fontWeight: 'bold',
   },
   button: {
     background: theme.button.primary,
     color: theme.button.contrast,
     padding: theme.spacing(3, 5, 3, 5),
-    borderRadius: "4px",
-    fontWeight: "bold",
+    borderRadius: '4px',
+    fontWeight: 'bold',
   },
-}));
+}))
 export default function Introduction(props) {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <Container className={classes.root}>
@@ -56,9 +56,9 @@ export default function Introduction(props) {
             <Typist.Delay ms={500} />
             <Button
               className={classes.button}
-              variant="contained"
-              color="primary"
-              onClick={() => props.setWindow("B")}
+              variant='contained'
+              color='primary'
+              onClick={() => props.setWindow('B')}
               endIcon={<PlayCircleFilledIcon>send</PlayCircleFilledIcon>}
             >
               View My Stack
@@ -67,5 +67,5 @@ export default function Introduction(props) {
         </Typist>
       </Grow>
     </Container>
-  );
+  )
 }

@@ -1,23 +1,23 @@
-import { createTheme } from "@material-ui/core/styles";
+import { createTheme } from '@material-ui/core/styles'
 
 // fluor theme
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#000000",
-      contrastText: "#000000",
+      main: '#000000',
+      contrastText: '#000000',
     },
     background: {
-      default: "#000000",
+      default: '#000000',
     },
     text: {
-      primary: "#ffffff",
+      primary: '#ffffff',
     },
   },
   button: {
-    primary: "#202945",
-    contrast: "#ffffff",
+    primary: '#202945',
+    contrast: '#ffffff',
   },
-});
+})
 
-export default theme;
+export default theme

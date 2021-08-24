@@ -1,13 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import "./assets/index.css";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import CustomThemeProvider from "./theme/CustomThemeProvider";
-ReactDOM.render(
-  <CustomThemeProvider>
-    <CssBaseline />
+import { render } from 'react-dom'
+import App from './App'
+import { ThemeProvider } from './contexts/theme'
+import './index.css'
+
+render(
+  <ThemeProvider>
     <App />
-  </CustomThemeProvider>,
-  document.getElementById("root")
-);
+  </ThemeProvider>,
+  document.getElementById('root')
+)
