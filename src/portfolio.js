@@ -30,7 +30,7 @@ const projects = [
     name: 'Ecommerce with MERN Stack',
     description:
       'An ecommerce website build with MERN stack, Allows for products setup and system administration ',
-    stack: ['MERN sTACK'],
+    stack: ['MERN STACK'],
     sourceCode: 'https://github.com/titusdishon/shoply-frontend',
     livePreview: 'No live preview',
   },
