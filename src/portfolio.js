@@ -35,7 +35,7 @@ const projects = [
     livePreview: 'No live preview',
   },
   {
-    name: 'Reatc Boiler Plate',
+    name: 'React Boiler Plate',
     description:
       'A boiler template that can be used for any react project setup',
     stack: ['React', 'TypeScript', 'Redux', 'Material Ui'],
