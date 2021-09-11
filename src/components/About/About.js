@@ -7,7 +7,7 @@ import React from 'react';
 
 const About = () => {
   const [openIframe, setOpenIframe] = React.useState(false)
-  const { name, role, description, resume, social } = about
+  const { name, role, description, social } = about
 
   return (
     <div className='about center'>

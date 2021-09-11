@@ -1,17 +1,14 @@
 import React, {useState} from 'react'
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
-import Modal from '@material-ui/core/Modal';
+import { Document, Page } from 'react-pdf/dist/umd/entry.webpack'
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import CloseIcon from '@material-ui/icons/Close';
-import IconButton from '@material-ui/core/IconButton';
 import { makeStyles,createStyles, Typography} from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import Resume from './TITUS_DISHON_Resume.pdf'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -69,15 +66,14 @@ const DocumentViewer = ({ source, open, handleClose }) => {
         onClose={handleClose}
         >
             <DialogTitle>
-                {pageNumber!==1&&<Typography variant="h5">
+                {pageNumber!==1&&<Typography variant="body1">
                     Titus Mutiso Dishon - Resume
                 </Typography>}
                 <CloseIcon  className={classes.closeButton} onClick={handleClose}/>
         </DialogTitle>
        <Document
         className="document-container"
-        file="TITUS_DISHON_Resume.pdf"
-        externalLinkTarget="_self"
+        file={Resume}
         onLoadSuccess={onDocumentLoadSuccess}
       >
       <Page pageNumber={pageNumber} />
