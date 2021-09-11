@@ -144,6 +144,9 @@ main {
 .btn--icon:active {
   transform: translateY(-5px);
 }
+.react-pdf__Page__textContent {
+  background-color: initial !important;
+}
 
 @media (max-width: 600px) {
   .section {

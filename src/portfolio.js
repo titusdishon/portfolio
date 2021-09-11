@@ -10,7 +10,7 @@ const about = {
   role: 'Fullstack Software Engineer',
   description:
     'Over the past 4+ years I have been developing software solutions for both co-orporate and startup companies. I have gained advanced skills in both frontend and backend development. I have worked In several industries including  Fintech, Transport and Logistics and I am now a working in the supply chain management system development.  I love learning and growing my technical skills. ',
-  resume: 'https://titusdishon.com/TITUS_DISHON_Resume.pdf',
+  resume: 'https://github.com/titusdishon/portfolio/blob/main/TITUS_DISHON_Resume.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/titusdishon/',
     github: 'https://github.com/titusdishon/',
