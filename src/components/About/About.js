@@ -2,12 +2,9 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { about } from '../../portfolio'
 import './About.css'
-import DocumentViewer from "../DocumentViewer";
-import React from 'react';
 
 const About = () => {
-  const [openIframe, setOpenIframe] = React.useState(false)
-  const { name, role, description, social } = about
+  const { name, role, description, resume, social } = about
 
   return (
     <div className='about center'>
@@ -23,11 +20,14 @@ const About = () => {
         Don&apos;t be shy, reach out to me through one of the channels below!
       </h5>
       <div className='about__contact center'>
-       <button>
-            <span type='button' className='btn btn--outline' onClick={()=>setOpenIframe(!openIframe)}>
+        {resume && (
+          <a href={resume}>
+            <span type='button' className='btn btn--outline'>
               Resume
             </span>
-          </button>
+          </a>
+        )}
+
         {social && (
           <>
             {social.github && (
@@ -52,8 +52,6 @@ const About = () => {
           </>
         )}
       </div>
-     <DocumentViewer source="https://github.com/titusdishon/portfolio/blob/main/TITUS_DISHON_Resume.pdf" open={openIframe} handleClose={()=>setOpenIframe(!openIframe)}/>
-
     </div>
   )
 }

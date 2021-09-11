@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { Document, Page } from 'react-pdf/dist/umd/entry.webpack'
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -9,6 +8,10 @@ import { makeStyles,createStyles, Typography} from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Resume from './TITUS_DISHON_Resume.pdf'
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -66,7 +69,7 @@ const DocumentViewer = ({ source, open, handleClose }) => {
         onClose={handleClose}
         >
             <DialogTitle>
-                {pageNumber!==1&&<Typography variant="body1">
+                {pageNumber!==1&&<Typography variant="h5">
                     Titus Mutiso Dishon - Resume
                 </Typography>}
                 <CloseIcon  className={classes.closeButton} onClick={handleClose}/>
