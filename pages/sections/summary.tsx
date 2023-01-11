@@ -1,5 +1,3 @@
-import { MdEmail } from "react-icons/md";
-
 export default function Summary() {
   return (
     <div className="flex-col justify-center w-1/2  mx-auto mt-12">

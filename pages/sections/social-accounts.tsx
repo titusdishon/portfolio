@@ -1,6 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
-import { BsTwitter, BsLinkedin, BsGithub, BsEmail } from "react-icons/bs";
+import { BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 export default function SocialAccounts() {
