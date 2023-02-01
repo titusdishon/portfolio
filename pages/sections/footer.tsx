@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <div className="w-full justify-center fixed bg-gray-100  bottom-0">
       <h3 className="mx-auto m-6 w-full text-center">
-        {`titusdishon@${dateToday.getFullYear()}`}
+        {`www.titusdishon@${dateToday.getFullYear()}`}
       </h3>
     </div>
   );

@@ -1,16 +1,16 @@
 import Header from "./sections/header";
 import SocialAccounts from "./sections/social-accounts";
-import Summary from "./sections/summary";
+import AboutMe from "./sections/about-me";
 import Footer from "./sections/footer";
 import NavBar from "./sections/nav";
 
 export default function Home() {
   return (
-    <div className="p-0">
+    <div className="p-0 overflow-auto">
       <NavBar />
       <Header />
       <SocialAccounts />
-      <Summary />
+      <AboutMe />
       <Footer />
     </div>
   );
