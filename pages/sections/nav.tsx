@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <ul className="flex w-full items-center justify-center sticky bg-gray-100 h-16 top-0 m-0 p-0">
+    <ul className="flex w-full items-center space-x-8 sticky bg-gray-100 h-16 top-0 m-0 p-0">
       <li className="mx-6">
         <Link href="/">Home</Link>
       </li>
@@ -11,6 +11,9 @@ export default function NavBar() {
       </li>
       <li className="mx-6">
         <Link href="/pages/blogs">Blog</Link>
+      </li>
+      <li className="mx-6">
+        <Link href="/pages/hobbies">Hobbies</Link>
       </li>
       <li className="mx-6">
         <Link href="/pages/contacts">Contacts</Link>

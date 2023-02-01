@@ -6,7 +6,7 @@ import NavBar from "./sections/nav";
 
 export default function Home() {
   return (
-    <div className="p-0 overflow-auto">
+    <div className="container mx-auto overflow-auto p-2">
       <NavBar />
       <Header />
       <SocialAccounts />
