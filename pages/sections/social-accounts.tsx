@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function SocialAccounts() {
   return (
-    <div className="container ">
+    <div className="container p-3">
       <h4 className=" text-3xl my-6  bg-clip-text">Where to find me</h4>
       <div className="flex  space-x-4 ">
         <div className="flex-column justify-center text-center">
