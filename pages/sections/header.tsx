@@ -5,7 +5,7 @@ export default function Header() {
     <div className="container">
       <h3 className=" text-xl  my-6  bg-clip-text p-3">
         Hi, Am <strong>Titus Mutiso Dishon</strong>, a Fullstack Software
-        Engineer based in Nairobi Kenya
+        Engineer from Nairobi Kenya.
       </h3>
     </div>
   );

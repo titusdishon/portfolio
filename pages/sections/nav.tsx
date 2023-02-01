@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { GoThreeBars } from "react-icons/go";
 
 export default function NavBar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -16,16 +17,16 @@ export default function NavBar() {
               TMD
             </Link>
             <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className="fas fa-bars"></i>
+              <GoThreeBars className="h-8 w-8" />
             </button>
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center" +
+              "lg:flex flex-grow items-center ease-linear transition-all duration-150" +
               (navbarOpen ? " flex" : " hidden")
             }
             id="example-navbar-danger"
