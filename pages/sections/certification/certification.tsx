@@ -2,19 +2,28 @@ import Image from "next/image";
 
 const CertificationData=[
     {
-        title:"AWS ",
+        title:"AWS",
         icon:'',
-        description:'AWS Cloud Practitioner '
+        link:'https://www.credly.com/badges/dd0e02be-7f1a-4b2f-8117-38adb9d35d99/public_url',
+        description:'AWS Certified Cloud Practitioner '
     },
     {
-        title:"S3",
+        title:"AWS Educate Getting Started with Compute",
         icon:'',
-        description:"AWS Storage Badge  "
+        link:'https://www.credly.com/badges/052e6675-196c-4441-9ced-60deb3b149e7/public_url',
+        description:"Amazon Elastic Compute Cloud (EC2)  "
     },
     {
-        title:"Compute",
+        title:"AWS Educate Getting Started with Storage",
         icon:'',
-        description:"AWS compute training   "
+        link:'https://www.credly.com/badges/7968aa23-1e87-4323-939c-b03464818e2a/public_url',
+        description:"AWS Storage services, S3, RDS, Aurora etc.."
+    },
+    {
+        title:"How to design & develop REST microservices in Golang (Go)\n",
+        icon:'',
+        link:'https://www.udemy.com/certificate/UC-ab689f0e-c673-4db1-a9fa-77bd93c7b742/',
+        description:"Backend development with Golang training .."
     }
 ]
 export default function Certification() {
@@ -32,12 +41,14 @@ export default function Certification() {
                                 alt={cert.title}/>
                         </div>
                         <div className="flex-1 min-w-0">
-                            <p className="text-lg font-medium ">
+                            <a href={cert.link} className="text-lg font-medium ">
                                 {cert.title}
-                            </p>
-                            <p className="text-sm  ">
-                                {cert.description}
-                            </p>
+                            </a>
+                           <p  className="text-sm mt-3">
+                               <a href={cert.link}>
+                                   {cert.description}
+                               </a>
+                           </p>
                         </div>
 
                     </div>

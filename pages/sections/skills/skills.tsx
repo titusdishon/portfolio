@@ -2,14 +2,24 @@ import Image from "next/image";
 
 export const CodingSkills=[
     {
-        title:"Golang",
+        title:"Backend development ",
         icon:'',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maxime explicabo commodi, consectetur aperiam sed esse possimus porro consequatur ratione asperiores? Reprehenderit accusamus maxime dolor amet eos cupiditate impedit illum.\n'
+        description:' Golang, Nodejs , PostgresSQL, Test Driven development, Graphql and  Rest APIS.'
     },
     {
-        title:"Golang",
+        title:"Frontend ",
         icon:'',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maxime explicabo commodi, consectetur aperiam sed esse possimus porro consequatur ratione asperiores? Reprehenderit accusamus maxime dolor amet eos cupiditate impedit illum.\n'
+        description:'React js, unit testing with Jest, end-to-end testing with Cypress, Micro-frontends , Webpack , Consuming rest api and state management'
+    },
+    {
+        title:"Cloud computing & CICD ",
+        icon:'',
+        description:' Certified AWS Cloud practitioner,AWS, Docker,  Infrastructure as code, Jenkins, Sonar cloud analysis, Github Actions and pipeline optimization  '
+    },
+    {
+        title:"Agile methodologies  ",
+        icon:'',
+        description:''
     }
 ]
 export default function Skills() {
@@ -30,7 +40,7 @@ export default function Skills() {
                             <p className="text-lg font-medium ">
                                 {skill.title}
                             </p>
-                            <p className="text-sm  ">
+                            <p className="text-sm mt-3">
                                 {skill.description}
                             </p>
                         </div>

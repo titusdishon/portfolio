@@ -30,7 +30,7 @@ export default function Education() {
                             <p className="text-lg font-medium ">
                                 {education.title}
                             </p>
-                            <p className="text-sm  ">
+                            <p className="text-sm mt-3">
                                 {education.description}
                             </p>
                         </div>

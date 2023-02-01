@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { GoThreeBars } from "react-icons/go";
+import Logo from "../../public/logo-no-bg.png";
+import Image from "next/image";
 
 export default function NavBar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -8,13 +10,18 @@ export default function NavBar() {
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-100">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="container px-1 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase "
+              className="inline-block mr-0 py-0 whitespace-nowrap  "
               href="/"
             >
-              TMD
+              <Image
+                  className="w-10 h-10 mx-auto"
+                  alt="TITUS DISHON"
+                  src={Logo}
+
+              />
             </Link>
             <button
               className="cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
