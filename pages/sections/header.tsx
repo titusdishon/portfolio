@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Logo from "../../public/titusdishon.png";
 import Image from "next/image";
+import Link from "next/link";
 
 dayjs.extend(relativeTime);
 
@@ -25,8 +26,9 @@ export default function Header() {
       </div>
 
       <div className="py-3 text-center">
-        <button
-          type="button"
+        <Link
+          type="Link"
+          href="https://www.linkedin.com/in/titusdishon/"
           className="text-white bg-[#0077B5] hover:bg-[#0077B5]/90 focus:ring-4 focus:outline-none focus:ring-[#0077B5]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#0077B5]/55 mr-2 mb-2"
         >
           <svg
@@ -45,10 +47,11 @@ export default function Header() {
             ></path>
           </svg>
           LinkedIn
-        </button>
+        </Link>
 
-        <button
-          type="button"
+        <Link
+          type="Link"
+          href="https://twitter.com/T__sayin"
           className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2"
         >
           <svg
@@ -67,9 +70,10 @@ export default function Header() {
             ></path>
           </svg>
           Twitter
-        </button>
-        <button
-          type="button"
+        </Link>
+        <Link
+          type="Link"
+          href="https://github.com/titusdishon"
           className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2"
         >
           <svg
@@ -88,7 +92,29 @@ export default function Header() {
             ></path>
           </svg>
           Github
-        </button>
+        </Link>
+        <Link
+          type="Link"
+          href="https://stackoverflow.com/users/8512080/tdishon"
+          className="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-orange-400 mr-2 mb-2"
+        >
+          <svg
+            className="w-4 h-4 mr-2"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="stack-overflow"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="currentColor"
+              d="M340.1 403.2l40.8-247.2C385.3 128 364.7 96 336 96H48c-28.7 0-49.3 32-25.9 56.1l40.8 247.2C79.9 424 100.6 448 128 448h128c27.4 0 48-24 36.1-44.8zM192 384h-64v-32h64v32zm0-64h-64v-32h64v32z"
+            ></path>
+          </svg>
+          Stack Overflow
+        </Link>
       </div>
       <p className="mb-3 mt-3">
         A software engineer with over {experience()} years of experience in
@@ -119,9 +145,10 @@ export default function Header() {
         Transforming Ideas into Reality?
       </div>
       <div className="mx-auto text-center">
-        <button
-          type="button"
-          className="cyan-500-700 border border-cyan-500 hover:bg-cyan-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-500 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-cyan-500 dark:hover:bg-cyan-500"
+        <Link
+          type="Link"
+          href="/pages/projects"
+          className="cyan-500-700 border border-cyan-500 hover:bg-cyan-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-500 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-cyan-500 dark:text-cyan-500 dark:hover:text-white dark:focus:ring-cyan-500 dark:hover:bg-cyan-500"
         >
           Check My Portfolio
           <svg
@@ -137,7 +164,7 @@ export default function Header() {
               clip-rule="evenodd"
             ></path>
           </svg>
-        </button>
+        </Link>
       </div>
     </div>
   );
