@@ -4,7 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function SocialAccounts() {
   return (
-    <div className="container p-3">
+    <div className="container lg:w-6/12 p-10">
       <h4 className=" text-4xl my-6  bg-clip-text font-bold leading-snug hover:opacity-75">
         How to find me
       </h4>

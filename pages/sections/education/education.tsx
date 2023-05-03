@@ -17,7 +17,7 @@ export const EducationData = [
 export default function Education() {
   return (
     <>
-      <ul className="mb-8 space-y-4 text-left ">
+      <ul className="container lg:w-6/12 p-10">
         {EducationData.map((education) => (
           <li className="pb-3 sm:pb-4" key={education.title}>
             <div className="flex items-center space-x-4">
