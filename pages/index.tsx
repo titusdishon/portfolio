@@ -1,11 +1,17 @@
-import Header from "./sections/header";
-import NavBar from "./sections/nav";
+import Footer from "./components/Footer";
+import CustomNavbar from "./components/NavBar";
+import AboutMe from "./sections/AboutMe";
+import Experience from "./sections/Experience";
+import Introduction from "./sections/Introduction";
 
 export default function Home() {
   return (
-    <div className="container lg:w-6/12 p-10 ">
-      <NavBar />
-      <Header />
+    <div >
+      <CustomNavbar />
+      <Introduction />
+      <AboutMe/>
+      <Experience/>
+      <Footer/>
     </div>
   );
 }
