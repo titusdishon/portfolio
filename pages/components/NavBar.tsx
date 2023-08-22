@@ -17,10 +17,10 @@ export default function CustomNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    { title: "About me", link: "#about" },
+    { title: "About me", link: "#about-me" },
     { title: "Experience", link: "#experience" },
     { title: "Portfolio", link: "#portfolio" },
-    { title: "Contact", link: "#contact" },
+    { title: "Contacts", link: "#contacts" },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function CustomNavbar() {
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         {menuItems.map((item) => (
           <NavbarItem key={item.title}>
-            <Link underline="active" href="#" size="lg">
+            <Link underline="active" href={item.link} size="lg">
               {item.title}
             </Link>
           </NavbarItem>
@@ -58,7 +58,7 @@ export default function CustomNavbar() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.title}-${index}`}>
-            <Link className="w-full" href="#" size="lg">
+            <Link className="w-full" href={item.link} size="lg">
               {item.title}
             </Link>
           </NavbarMenuItem>

@@ -1,4 +1,5 @@
 import { Avatar } from "@nextui-org/react";
+// import SocialMedia from "./SocialMedia";
 
 export default function Footer() {
   return (
@@ -21,22 +22,22 @@ export default function Footer() {
           </a>
           <ul className="mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mb-0">
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              <a href="#about-me" className="mr-4 hover:underline md:mr-6 ">
                 About Me
               </a>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
+              <a href="#experience" className="mr-4 hover:underline md:mr-6">
                 Experience
               </a>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              <a href="#portfolio" className="mr-4 hover:underline md:mr-6 ">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="#contacts" className="hover:underline">
                 Contact
               </a>
             </li>
@@ -51,6 +52,9 @@ export default function Footer() {
           . All Rights Reserved.
         </span>
       </div>
+      {/* <div className="absolute left-0 bottom-0 mb-4 ml-4">
+        <SocialMedia />
+      </div> */}
     </footer>
   );
 }

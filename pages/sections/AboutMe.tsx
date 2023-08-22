@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <div className="mx-auto flex max-w-[974px] flex-col bg-background px-6 py-8 md:flex-row">
+    <div className="mx-auto flex max-w-[974px] flex-col bg-background px-6 py-8 md:flex-row" id="about-me">
       <div className="flex-grow pr-8 md:w-2/3">
-        <h1 className="mb-6 text-4xl font-bold">About Me</h1>
+      <h1 className="mb-6 text-2xl font-bold  light:bg-gray-100 rounded-tr-[500px] rounded-br-[500px] text-blue-500">About me</h1>
         <p className="text-text mt-4 py-2 text-base">
          I&apos;m a passionate software engineer skilled in crafting seamless user
           experiences using <strong>React.js</strong> and{" "}
@@ -31,12 +31,12 @@ export default function AboutMe() {
           contributing to cutting-edge projects.
         </p>
       </div>
-      <div className="mt-8 md:mt-0 md:w-1/3">
+      <div className="mt-8 md:mt-0 md:w-2/5">
         <Image
           width={700}
           height={700}
           src="/titusdishon.png"
-          className="h-full w-full rounded-lg object-cover shadow-md"
+          className="h-full w-full rounded-lg object-cover shadow-none grayscale hover:grayscale-0"
           alt="profile"
         />
       </div>
